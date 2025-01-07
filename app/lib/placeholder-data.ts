@@ -1,5 +1,3 @@
-// This file contains placeholder data that you'll be replacing with real data in the Data Fetching chapter:
-// https://nextjs.org/learn/dashboard-app/fetching-data
 const users = [
   {
     id: '410544b2-4001-4271-9855-fec4b6a6442a',
@@ -48,84 +46,97 @@ const customers = [
   },
 ];
 
-const invoices = [
+const tickets = [
   {
     customer_id: customers[0].id,
     amount: 15795,
     status: 'pending',
-    date: '2022-12-06',
+    created_at: '2022-12-06',
+    code: 'ARB-2'
   },
   {
     customer_id: customers[1].id,
     amount: 20348,
     status: 'pending',
-    date: '2022-11-14',
+    created_at: '2022-11-14',
+    code: 'CPR-2'
   },
   {
     customer_id: customers[4].id,
     amount: 3040,
-    status: 'paid',
-    date: '2022-10-29',
+    status: 'resolved',
+    created_at: '2022-10-29',
+    code: 'ARB-2'
   },
   {
     customer_id: customers[3].id,
     amount: 44800,
-    status: 'paid',
-    date: '2023-09-10',
+    status: 'resolved',
+    created_at: '2023-09-10',
+    code: 'CWQ-2'
   },
   {
     customer_id: customers[5].id,
     amount: 34577,
     status: 'pending',
-    date: '2023-08-05',
+    created_at: '2023-08-05',
+    code: 'CPR-2'
   },
   {
     customer_id: customers[2].id,
     amount: 54246,
     status: 'pending',
-    date: '2023-07-16',
+    created_at: '2023-07-16',
+    code: 'ARB-2'
   },
   {
     customer_id: customers[0].id,
     amount: 666,
     status: 'pending',
-    date: '2023-06-27',
+    created_at: '2023-06-27',
+    code: 'CPR-2'
   },
   {
     customer_id: customers[3].id,
     amount: 32545,
-    status: 'paid',
-    date: '2023-06-09',
+    status: 'resolved',
+    created_at: '2023-06-09',
+    code: 'ARB-2'
   },
   {
     customer_id: customers[4].id,
     amount: 1250,
-    status: 'paid',
-    date: '2023-06-17',
+    status: 'resolved',
+    created_at: '2023-06-17',
+    code: 'CWQ-2'
   },
   {
     customer_id: customers[5].id,
     amount: 8546,
-    status: 'paid',
-    date: '2023-06-07',
+    status: 'resolved',
+    created_at: '2023-06-07',
+    code: 'CWQ-2'
   },
   {
     customer_id: customers[1].id,
     amount: 500,
-    status: 'paid',
-    date: '2023-08-19',
+    status: 'resolved',
+    created_at: '2023-08-19',
+    code: 'ARB-2'
   },
   {
     customer_id: customers[5].id,
     amount: 8945,
-    status: 'paid',
-    date: '2023-06-03',
+    status: 'resolved',
+    created_at: '2023-06-03',
+    code: 'ARB-2'
   },
   {
     customer_id: customers[2].id,
     amount: 1000,
-    status: 'paid',
-    date: '2022-06-05',
+    status: 'resolved',
+    created_at: '2022-06-05',
+    code: 'CWQ-2'
   },
 ];
 
@@ -144,4 +155,4 @@ const revenue = [
   { month: 'Dec', revenue: 4800 },
 ];
 
-export { users, customers, invoices, revenue };
+export { users, customers, tickets as tickets, revenue };
