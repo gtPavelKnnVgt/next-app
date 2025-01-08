@@ -1,4 +1,4 @@
-import TechNuLogo from '@/app/ui/acme-logo';
+import TechNuLogo from '@/app/ui/technu-logo';
 import LoginForm from '@/app/ui/login-form';
  
 export default function LoginPage() {

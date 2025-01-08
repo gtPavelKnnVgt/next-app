@@ -12,8 +12,6 @@ import { formatCurrency } from './utils';
 
 export async function fetchRevenue() {
   try {
-    // Artificially delay a response for demo purposes.
-    // Don't do this in production :)
 
     console.log('Fetching revenue data...');
     await new Promise((resolve) => setTimeout(resolve, 3000));
@@ -51,9 +49,6 @@ export async function fetchLatestTickets() {
 
 export async function fetchCardData() {
   try {
-    // You can probably combine these into a single SQL query
-    // However, we are intentionally splitting them to demonstrate
-    // how to initialize multiple queries in parallel with JS.
     const ticketCountPromise = sql`SELECT COUNT(*) FROM tickets`;
     const customerCountPromise = sql`SELECT COUNT(*) FROM customers`;
     const ticketStatusPromise = sql`SELECT
