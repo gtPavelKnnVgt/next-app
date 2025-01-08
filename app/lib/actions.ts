@@ -73,6 +73,7 @@ export async function createTicket(prevState: TicketState, formData: FormData) {
     }
 
     revalidatePath('/dashboard/tickets');
+    revalidatePath('/dashboard');
     redirect('/dashboard/tickets');
 }
 
@@ -107,6 +108,7 @@ export async function updateTicket(id: string, prevState: TicketState, formData:
     }
 
     revalidatePath('/dashboard/tickets');
+    revalidatePath('/dashboard');
     redirect('/dashboard/tickets');
 }
 
@@ -144,6 +146,7 @@ export async function updateCustomer(id: string, prevState: CustomerState, formD
     }
 
     revalidatePath('/dashboard/customers');
+    revalidatePath('/dashboard');
     redirect('/dashboard/customers');
 }
 
